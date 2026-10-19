@@ -22,9 +22,6 @@ env/
 .pytest_cache/
 .hypothesis/
 
-# Pickle files (generated — large binary files)
-*.pkl
-
 # OS
 .DS_Store
 Thumbs.db

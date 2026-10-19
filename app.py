@@ -1,3 +1,5 @@
+import os
+import subprocess
 import streamlit as st
 
 st.set_page_config(
@@ -5,6 +7,10 @@ st.set_page_config(
     page_icon="🎓",
     layout="wide",
 )
+
+if not os.path.exists("best_model.pkl"):
+    with st.spinner("Training models for the first time, please wait..."):
+        subprocess.run(["python", "train_model.py"], check=True)
 
 st.title("🎓 Student Performance ML Dashboard")
 st.markdown("---")
@@ -20,6 +26,4 @@ Use the **sidebar** to navigate between the four pages:
 | 🧹 Data Cleaning | Cleaning pipeline, shape comparison, engineered columns, score distribution |
 | 📈 Visualizations | Univariate, bivariate and multivariate charts |
 | 🤖 Prediction | Predict a student's percentage and grade (single or bulk CSV upload) |
-
-> **Before using the Prediction page**, run `python train_model.py` from the project folder to generate the required `.pkl` files.
 """)
