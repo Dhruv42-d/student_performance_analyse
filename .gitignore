@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest / Hypothesis
+.pytest_cache/
+.hypothesis/
+
+# Pickle files (generated — large binary files)
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kiro spec files (internal tooling)
+.kiro/
