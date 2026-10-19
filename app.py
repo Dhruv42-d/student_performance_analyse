@@ -21,6 +21,5 @@ Use the **sidebar** to navigate between the four pages:
 | 📈 Visualizations | Univariate, bivariate and multivariate charts |
 | 🤖 Prediction | Predict a student's percentage and grade (single or bulk CSV upload) |
 
-> **Before using the Prediction page**, run `python train_model.py` from the project folder  
-> to train the models and generate the required `.pkl` files.
+> **Before using the Prediction page**, run `python train_model.py` from the project folder to generate the required `.pkl` files.
 """)
